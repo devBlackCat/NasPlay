@@ -1,0 +1,139 @@
+/* 공통 스타일 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #0d6efd;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    z-index: 3;
+    position: relative;
+}
+
+button {
+    width: 100%;
+    background-color: #0d6efd;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b5ed7;
+}
+#playlistList{
+    padding: 0;
+
+}
+/* 리스트 아이템 및 삭제 버튼 스타일 */
+.file-list-item,
+.playlist-item {
+    cursor: pointer;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-delete-btn,
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* 섹션 스타일 */
+#playlistSection {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: -2px 0 4px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    transition: width 0.3s;
+    z-index: 2;
+}
+
+#playlistSection.hide {
+    width: 60px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0); /* 수정된 코드 */
+    box-shadow: none;
+}
+#fileList{
+    padding: 0;
+}
+.page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    transition: width 0.3s; /* 추가된 코드 */
+    width: calc(100% - 380px); /* 추가된 코드 */
+}
+
+/* 토글 버튼 스타일 */
+#toggleButton {
+    background-color: #0d6efd;
+    color: #ffffff;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: inline-block;
+    width: calc(100% - 20px);
+}
+
+#toggleButton:hover {
+    background-color: #0b5ed7;
+}
+
+/* 폼 요소 간격 */
+form > label,
+form > input,
+form > button {
+    display: block;
+}
+
+/* 입력 폼 요소 스타일링 */
+input[type="text"],
+input[type="email"],
+input[type="file"],
+button {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
+.sortable-ghost {
+    opacity: 0.6;
+    background: #c8ebfb;
+}
